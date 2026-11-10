@@ -1,4 +1,4 @@
-# 💰 Planej.ai - Controle Financeiro
+# 💰 Controle Financeiro
 
 Aplicação web desenvolvida para gerenciamento de finanças pessoais, permitindo o cadastro de entradas e saídas, cálculo automático de saldo em tempo real e persistência de dados local.
 
