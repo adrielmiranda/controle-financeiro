@@ -1,0 +1,16 @@
+@keyframes moveInLeft {
+  /*Criando uma animação que será usada para minha estilização. Começa no 0% e termina no 100%*/
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem); /*é movido 100 pixels para a esquerda.*/
+  }
+
+  80% {
+    transform: translateX(1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0); /*O elemento fica exatamento na posição original*/
+  }
+}

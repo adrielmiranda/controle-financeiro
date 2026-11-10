@@ -1,0 +1,118 @@
+    <!DOCTYPE html>
+    <html lang="pt-BR">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Controle Financeiro</title>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        <header class="header">
+            <h1 class="title">Controle Financeiro</h1>
+        </header>
+
+        <main class="container">
+            <section class="section-summary">
+                <div class="card card-entry">
+                    <p>Entradas</p>
+                    <p id="update-entries">R$ 0,00</p>
+                </div>
+                <div class="card card-output">
+                    <p>Saídas</p>
+                    <p id="update-outputs">R$ 0,00</p>
+                </div>
+                <div class="card card-balance">
+                    <p>Saldo</p>
+                    <p id="update-balance">R$ 0,00</p>
+                </div>
+            </section>
+
+            <!-- <section class="section-form">
+                <form id="form" class="form">
+                    <input id="description" class="input" type="text" placeholder="Descrição">
+                    <input id="value" class="input" type="number" placeholder="Valor">
+
+                    <select name="movement-type" id="movement-type" class="select select-movement">
+                        <option value="">Selecione</option>
+                        <option value="entry">Entrada</option>
+                        <option value="output">Saída</option>
+                    </select>
+
+                    <select name="category" id="select-category" class="select select-category">
+                        <option value="">Selecione</option>
+                        <option value="salary">Salário</option>
+                        <option value="food">Alimentação</option>
+                        <option value="transport">Transporte</option>
+                        <option value="leisure">Lazer</option>
+                        <option value="travels">Viagens</option>
+                        <option value="others">Outros</option>
+                    </select>
+
+                    <button id="btn-add" class="btn-add" type="submit">
+                        <i class="fa-solid fa-plus btn-icon"></i>
+                        <span id="btn-text">Adicionar</span>
+                    </button>
+                </form>
+            </section> -->
+
+            <section class="section-form">
+                <form id="form" class="form">
+                    <!-- Campo Descrição -->
+                    <div class="input-group">
+                        <label for="description" class="sr-only">Descrição</label>
+                        <input id="description" class="input" type="text" placeholder="Descrição">
+                    </div>
+
+                    <!-- Campo Valor -->
+                    <div class="input-group">
+                        <label for="value" class="sr-only">Valor</label>
+                        <input id="value" class="input" type="number" placeholder="Valor">
+                    </div>
+
+                    <!-- Select Tipo de Movimentação -->
+                    <div class="input-group">
+                        <label for="movement-type" class="sr-only">Tipo de Movimentação</label>
+                        <select name="movement-type" id="movement-type" class="select select-movement">
+                            <option value="">Selecione</option>
+                            <option value="entry">Entrada</option>
+                            <option value="output">Saída</option>
+                        </select>
+                    </div>
+
+                    <!-- Select Categoria -->
+                    <div class="input-group">
+                        <label for="select-category" class="sr-only">Categoria</label>
+                        <select name="category" id="select-category" class="select select-category">
+                            <option value="">Selecione</option>
+                            <option value="salary">Salário</option>
+                            <option value="food">Alimentação</option>
+                            <option value="transport">Transporte</option>
+                            <option value="leisure">Lazer</option>
+                            <option value="travels">Viagens</option>
+                            <option value="others">Outros</option>
+                        </select>
+                    </div>
+
+                    <button id="btn-add" class="btn-add" type="submit">
+                        <i class="fa-solid fa-plus btn-icon"></i>
+                        <span id="btn-text">Adicionar</span>
+                    </button>
+                </form>
+            </section>
+
+            <section class="section-list">
+                <h2>Movimentações</h2>
+                <ul id="list-movement" class="list-movement">
+                </ul>
+            </section>
+
+        </main>
+        <script src="index.js"></script>
+    </body>
+
+    </html>

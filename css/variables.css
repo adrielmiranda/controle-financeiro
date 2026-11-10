@@ -1,0 +1,25 @@
+:root {
+  --color-text-muted: #0f172a;
+  --color-text-main: #64748b;
+
+  /* Cores fundo card */
+  --color-entry: #10b981;
+  --color-output: #ef4444;
+  --color-balance: #06b6d4;
+
+  --border: solid 1px rgba(255, 255, 255, 0.2);
+  --border1: 1px solid #474646;
+  --color-border: #4f46e5;
+  --color-placeholder: #a19e9e;
+
+  --color-button: #4338ca;
+  --color-text: #ffffff;
+  --color-focus: #f1f5f9;
+  --box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+
+  /*Cores dos icones editar e excluir
+  e Fundo*/
+  --color-trash: #e81224;
+  --color-edit: #0078d7;
+  --color-icon-background: #7486a0;
+}
